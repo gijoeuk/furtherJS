@@ -1,6 +1,6 @@
 function testNoteIsCreated() {
-  var note = new Note('hh');
+  var note = new Note('hi');
   assert.isTrue(note.text === 'hi');
 };
 
- testNoteIsCreated();
+testNoteIsCreated();
