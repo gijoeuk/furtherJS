@@ -6,6 +6,7 @@
   }
 
   ListView.prototype.getHTML = function(){
+
     for( var i = 0 ; i < this.list.notes.length; i++ ) {
       return ("<ul><li><div>" + this.list.notes[i]._text + "</div></li></ul>");
     }
