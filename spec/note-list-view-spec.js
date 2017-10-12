@@ -1,8 +1,9 @@
 function testNoteList(){
   var list = new List();
-  list.store('Marcus and Joe back in Citizen M');
+  list.store('Sunali is about to smash her computer to pieces');
   listView = new ListView(list);
-  text = '<ul><li><div>Marcus and Joe back in Citizen M</div></li></ul>';
+  text = '<ul><li><div>Sunali is about to s</div></li></ul>';
+  console.log(listView);
   assert.isTrue(listView.getHTML() === text);
 }
 testNoteList();
