@@ -5,9 +5,8 @@
   this.listView = new ListView(this.list)
 }
 
-  NoteController.prototype.changeGreeting = function() {
-
-    document.getElementById('app').innerHTML = this.listView.getHTML()
+  NoteController.prototype.viewNoteList = function() {
+      return (document.getElementById('app').innerHTML = this.listView.getHTML());
   }
 exports.NoteController = NoteController;
 })(this);
