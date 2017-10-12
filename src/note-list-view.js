@@ -6,12 +6,12 @@
   }
 
   ListView.prototype.getHTML = function(){
-    var toReturn = '<ul>'
+    var topandtail = '<ul>'
     for( var i = 0 ; i < this.list.notes.length; i++ ) {
-      toReturn = toReturn + "<li><div>" + this.list.notes[i]._text + "</div></li>";
+      topandtail = topandtail + "<li><div>" + this.list.notes[i]._text + "</div></li>";
     }
-    toReturn = toReturn + '</ul>' 
-    return toReturn;
+    topandtail = topandtail + '</ul>'
+    return topandtail;
   }
 
   exports.ListView = ListView
