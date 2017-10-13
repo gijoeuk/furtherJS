@@ -5,6 +5,10 @@
     this.list = list
   }
 
+  ListView.prototype.twentyChars = function(){
+    return string.slice(0,20);
+  }
+
   ListView.prototype.getHTML = function(){
     var topandtail = '<ul>'
     for( var i = 0 ; i < this.list.notes.length; i++ ) {
